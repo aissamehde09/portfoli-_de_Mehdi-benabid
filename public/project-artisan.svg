@@ -1,0 +1,41 @@
+<svg width="1900" height="900" viewBox="0 0 1900 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1900" height="900" fill="white"/>
+  <rect y="90" width="1900" height="332" fill="#0A73B7"/>
+  <text x="725" y="204" font-family="Arial, sans-serif" font-size="52" font-weight="900" fill="white">Trouve ton artisan !</text>
+  <text x="694" y="250" font-family="Arial, sans-serif" font-size="20" font-weight="700" fill="white">Découvrez les artisans de la région Auvergne-Rhône-Alpes et</text>
+  <text x="775" y="277" font-family="Arial, sans-serif" font-size="20" font-weight="700" fill="white">contactez-les facilement pour vos projets.</text>
+  <rect x="823" y="307" width="255" height="50" rx="10" fill="#F8FAFC"/>
+  <rect x="823" y="352" width="255" height="5" rx="2.5" fill="#7EB85E"/>
+  <text x="849" y="338" font-family="Arial, sans-serif" font-size="21" font-weight="900" fill="#003B64">Voir tous les artisans</text>
+  <rect y="422" width="1900" height="336" fill="#EEF7FC"/>
+  <text x="705" y="509" font-family="Arial, sans-serif" font-size="34" font-weight="900" fill="#004E7F">Comment trouver mon artisan ?</text>
+  <g>
+    <rect x="303" y="540" width="312" height="162" rx="10" fill="white"/>
+    <circle cx="459" cy="592" r="26" fill="#087DCA"/>
+    <text x="452" y="601" font-family="Arial, sans-serif" font-size="24" font-weight="900" fill="white">1</text>
+    <text x="346" y="650" font-family="Arial, sans-serif" font-size="16" font-weight="800" fill="#111827">Choisir la catégorie d'artisanat</text>
+    <text x="407" y="672" font-family="Arial, sans-serif" font-size="16" font-weight="800" fill="#111827">dans le menu.</text>
+  </g>
+  <g>
+    <rect x="631" y="540" width="312" height="162" rx="10" fill="white"/>
+    <circle cx="787" cy="592" r="26" fill="#7EB85E"/>
+    <text x="780" y="601" font-family="Arial, sans-serif" font-size="24" font-weight="900" fill="white">2</text>
+    <text x="720" y="650" font-family="Arial, sans-serif" font-size="16" font-weight="800" fill="#111827">Choisir un artisan.</text>
+  </g>
+  <g>
+    <rect x="959" y="540" width="312" height="162" rx="10" fill="white"/>
+    <circle cx="1115" cy="592" r="26" fill="#005A8E"/>
+    <text x="1108" y="601" font-family="Arial, sans-serif" font-size="24" font-weight="900" fill="white">3</text>
+    <text x="997" y="650" font-family="Arial, sans-serif" font-size="16" font-weight="800" fill="#111827">Le contacter via le formulaire de</text>
+    <text x="1081" y="672" font-family="Arial, sans-serif" font-size="16" font-weight="800" fill="#111827">contact.</text>
+  </g>
+  <g>
+    <rect x="1287" y="540" width="312" height="162" rx="10" fill="white"/>
+    <circle cx="1443" cy="592" r="26" fill="#D7282F"/>
+    <text x="1436" y="601" font-family="Arial, sans-serif" font-size="24" font-weight="900" fill="white">4</text>
+    <text x="1326" y="650" font-family="Arial, sans-serif" font-size="16" font-weight="800" fill="#111827">Une réponse sera apportée sous</text>
+    <text x="1417" y="672" font-family="Arial, sans-serif" font-size="16" font-weight="800" fill="#111827">48h.</text>
+  </g>
+  <text x="303" y="838" font-family="Arial, sans-serif" font-size="28" font-weight="900" fill="#004E7F">Les artisans du mois</text>
+  <rect x="303" y="853" width="60" height="4" rx="2" fill="#7EB85E"/>
+</svg>

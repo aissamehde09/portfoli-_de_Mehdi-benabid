@@ -1,0 +1,5 @@
+<svg width="512" height="512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Railway">
+  <rect width="512" height="512" rx="96" fill="#151426"/>
+  <circle cx="256" cy="256" r="134" fill="#ffffff"/>
+  <path d="M132 219h208c-12-22-31-39-57-48H150a134 134 0 0 0-18 48Zm-8 47h270a136 136 0 0 0-9-37H126a136 136 0 0 0-2 37Zm23 58h216a137 137 0 0 0 25-48H129a133 133 0 0 0 18 48Z" fill="#151426"/>
+</svg>

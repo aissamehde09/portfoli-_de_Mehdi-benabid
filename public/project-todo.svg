@@ -1,0 +1,30 @@
+<svg width="1600" height="800" viewBox="0 0 1600 800" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1600" height="800" fill="#F8FAFC"/>
+  <circle cx="1420" cy="690" r="280" fill="#E0F2FE"/>
+  <circle cx="80" cy="80" r="260" fill="#DBEAFE"/>
+  <rect x="937" y="40" width="126" height="38" rx="19" fill="white" stroke="#93C5FD"/>
+  <text x="967" y="64" font-family="Arial, sans-serif" font-size="15" font-weight="700" fill="#2563EB">Mode sombre</text>
+  <rect x="670" y="88" width="170" height="36" rx="18" fill="#BFDBFE"/>
+  <text x="684" y="112" font-family="Arial, sans-serif" font-size="15" fill="#0F172A">Un petit pas a la fois</text>
+  <text x="480" y="184" font-family="Arial, sans-serif" font-size="54" font-weight="900" fill="#1F2937">Organise ta journée sans</text>
+  <text x="660" y="238" font-family="Arial, sans-serif" font-size="54" font-weight="900" fill="#1F2937">pression</text>
+  <text x="505" y="278" font-family="Arial, sans-serif" font-size="18" fill="#334155">Note ce qui compte, coche ce qui est fait, puis avance tranquillement.</text>
+  <rect x="455" y="310" width="640" height="368" rx="34" fill="white" stroke="#D1D5DB"/>
+  <rect x="482" y="338" width="586" height="94" rx="15" fill="url(#card)" stroke="#93C5FD"/>
+  <text x="502" y="380" font-family="Arial, sans-serif" font-size="24" font-weight="800" fill="#1F2937">Ta liste du moment</text>
+  <text x="502" y="410" font-family="Arial, sans-serif" font-size="16" fill="#64748B">Ajoute une tache simple et garde une vue claire sur ce qu'il te reste.</text>
+  <rect x="482" y="450" width="482" height="48" rx="8" fill="white" stroke="#D1D5DB"/>
+  <text x="500" y="480" font-family="Arial, sans-serif" font-size="16" fill="#777">Exemple : appeler maman ou finir le devoir</text>
+  <rect x="977" y="450" width="92" height="49" rx="8" fill="#2563EB"/>
+  <text x="994" y="481" font-family="Arial, sans-serif" font-size="16" font-weight="800" fill="white">Ajouter</text>
+  <text x="482" y="524" font-family="Arial, sans-serif" font-size="15" fill="#555">Astuce : appuie sur Entree pour ajouter plus vite.</text>
+  <text x="482" y="562" font-family="Arial, sans-serif" font-size="15" font-weight="700" fill="#64748B">Rien en attente pour le moment.</text>
+  <rect x="482" y="582" width="586" height="70" rx="14" fill="#F8FAFC" stroke="#CBD5E1" stroke-dasharray="4 4"/>
+  <text x="600" y="624" font-family="Arial, sans-serif" font-size="16" fill="#64748B">Commence doucement : ajoute ta premiere tache.</text>
+  <defs>
+    <linearGradient id="card" x1="482" y1="338" x2="1068" y2="432" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#DBEAFE"/>
+      <stop offset="1" stop-color="#F8FAFC"/>
+    </linearGradient>
+  </defs>
+</svg>

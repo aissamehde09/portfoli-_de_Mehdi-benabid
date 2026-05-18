@@ -1,0 +1,16 @@
+Mehdi Benabid
+Developpeur Web Junior
+
+Email : benabid.mehdi2009@gmail.com
+Telephone : +33 6 25 10 00 94
+GitHub : https://github.com/aissamehde09
+
+Competences :
+- Frontend : HTML, CSS, JavaScript, React
+- Backend : Node.js, Express.js
+- Database : MongoDB, MySQL
+- Outils : Git, GitHub, Vercel, Railway, Figma
+
+Projets :
+- To-Do List App : https://to-do-list-vert-one.vercel.app/
+- Trouve Ton Artisan : https://trouve-ton-artisan-ab7z.vercel.app/

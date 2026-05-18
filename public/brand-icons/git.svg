@@ -1,0 +1,5 @@
+<svg width="512" height="512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Git">
+  <rect width="512" height="512" rx="96" fill="#ffffff"/>
+  <rect x="110" y="109" width="292" height="292" rx="32" transform="rotate(45 256 256)" fill="#F05033"/>
+  <path d="M213 174v78c-18 8-31 26-31 47 0 29 23 52 52 52s52-23 52-52c0-21-12-39-30-47v-37l79 79c-3 7-5 14-5 22 0 29 23 52 52 52s52-23 52-52-23-52-52-52c-8 0-15 2-22 5l-83-83c6-8 10-18 10-29 0-29-23-52-52-52s-52 23-52 52c0 20 12 38 30 46Z" fill="#ffffff"/>
+</svg>
