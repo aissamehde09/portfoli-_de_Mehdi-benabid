@@ -89,7 +89,7 @@ export function Hero() {
                 <FontAwesomeIcon icon={faComment} className="h-5 w-5" aria-hidden="true" />
               </motion.a>
               <motion.a
-                href="/cv-mehdi-benabid.pdf"
+                href="/CV_Mehdi_Benabid.pdf"
                 download
                 className="focus-premium shine-link inline-flex h-14 items-center justify-center gap-3 rounded-lg border border-neon/60 bg-white/[0.035] px-7 text-base font-semibold text-ivory transition hover:bg-neon/10 hover:shadow-[0_0_34px_rgba(37,99,235,0.18)]"
                 whileHover={{ y: -3, scale: 1.015 }}

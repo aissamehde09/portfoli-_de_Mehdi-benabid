@@ -94,7 +94,7 @@ export function Navbar({ theme, onToggleTheme }) {
             <FontAwesomeIcon icon={themeIcon} className="h-4 w-4" />
           </button>
           <a
-            href="/cv-mehdi-benabid.pdf"
+            href="/CV_Mehdi_Benabid.pdf"
             download
             className="focus-premium shine-link inline-flex h-9 items-center gap-2 rounded-xl border border-electric/50 bg-electric/10 px-3 text-xs font-semibold text-neon transition hover:bg-electric/20 hover:shadow-[0_0_30px_rgba(37,99,235,0.25)]"
           >
@@ -137,7 +137,7 @@ export function Navbar({ theme, onToggleTheme }) {
                 </a>
               ))}
               <a
-                href="/cv-mehdi-benabid.pdf"
+                href="/CV_Mehdi_Benabid.pdf"
                 download
                 onClick={close}
                 className="mt-2 inline-flex items-center justify-center gap-2 rounded-xl border border-electric/50 bg-electric/10 px-4 py-3 text-sm font-semibold text-neon"
