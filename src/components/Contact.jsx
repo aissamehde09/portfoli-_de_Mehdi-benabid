@@ -110,7 +110,7 @@ export function Contact() {
             </div>
             {status === "success" && (
               <p className="rounded-2xl border border-neon/25 bg-neon/10 px-4 py-3 text-sm font-semibold text-neon">
-                Message envoyé. Vérifie ta boîte Gmail.
+                Message envoyé.
               </p>
             )}
             {status === "error" && (
