@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { AnimatePresence, motion } from "framer-motion";
+import { AnimatePresence, motion, useScroll, useSpring } from "framer-motion";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faDownload, faMoon, faSun, faXmark } from "@fortawesome/free-solid-svg-icons";
 import { navItems } from "../data/portfolio";
@@ -8,6 +8,9 @@ export function Navbar({ theme, onToggleTheme }) {
   const [isOpen, setIsOpen] = useState(false);
   const [active, setActive] = useState("#accueil");
   const [scrolled, setScrolled] = useState(false);
+
+  const { scrollYProgress } = useScroll();
+  const scaleX = useSpring(scrollYProgress, { stiffness: 200, damping: 30, restDelta: 0.001 });
 
   useEffect(() => {
     const onScroll = () => {
@@ -43,6 +46,11 @@ export function Navbar({ theme, onToggleTheme }) {
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
     >
+      {/* Scroll progress bar */}
+      <motion.div
+        className="scroll-progress-bar absolute bottom-0 left-0 right-0 h-[2px] origin-left bg-gradient-neon-h"
+        style={{ scaleX }}
+      />
       <nav className="mx-auto flex h-16 max-w-6xl items-center justify-between px-5 sm:px-8 lg:px-10">
         <motion.a
           href="#accueil"

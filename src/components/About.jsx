@@ -39,22 +39,33 @@ export function About() {
   return (
     <Section id="apropos" className="py-24">
       <div className="absolute -left-24 top-32 h-80 w-80 rounded-full bg-electric/10 blur-3xl" />
-      <div className="absolute -right-28 bottom-20 h-80 w-80 rounded-full bg-neon/10 blur-3xl" />
+      <div className="absolute -right-28 bottom-20 h-80 w-80 rounded-full bg-neon/[0.08] blur-3xl" />
 
       <div className="grid items-center gap-12 lg:grid-cols-[1.06fr_0.94fr]">
         <motion.div
           initial={{ opacity: 0, y: 26 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, amount: 0.25 }}
+          viewport={{ once: true, amount: 0.2 }}
           transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
         >
-          <div className="mb-4 flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.24em] text-neon">
+          <div className="mb-3 flex items-center gap-2 text-xs font-bold uppercase tracking-[0.24em] text-neon">
             <span className="h-1.5 w-1.5 rounded-full bg-neon shadow-[0_0_18px_rgba(59,130,246,0.9)]" />
             À propos de moi
           </div>
-          <h2 className="max-w-3xl text-3xl font-black leading-tight tracking-tight text-ivory sm:text-4xl lg:text-5xl">
-            Passionné par le développement web et la création d’applications modernes
+          <h2 className="max-w-3xl text-3xl font-extrabold leading-tight tracking-tight text-ivory sm:text-4xl lg:text-5xl">
+            Passionné par le développement web et la création d’applications{" "}
+            <span className="text-gradient">modernes</span>
           </h2>
+
+          {/* Divider */}
+          <motion.div
+            className="section-divider"
+            initial={{ scaleX: 0, opacity: 0 }}
+            whileInView={{ scaleX: 1, opacity: 1 }}
+            viewport={{ once: true }}
+            style={{ transformOrigin: "left" }}
+            transition={{ duration: 0.55, delay: 0.2 }}
+          />
 
           <div className="mt-6 max-w-2xl space-y-4 text-base leading-8 text-slate-300">
             <p>
@@ -73,43 +84,46 @@ export function About() {
             </p>
           </div>
 
-          <div className="mt-8 grid gap-4">
+          <div className="mt-8 grid gap-3">
             {aboutCards.map((card, index) => (
               <motion.article
                 key={card.title}
-                className="premium-card group grid gap-4 rounded-2xl p-5 transition hover:border-neon/45 hover:bg-neon/[0.075] sm:grid-cols-[3.25rem_1fr]"
-                initial={{ opacity: 0, y: 18 }}
+                className="premium-card group grid gap-4 rounded-2xl p-5 transition hover:border-neon/40 sm:grid-cols-[3.25rem_1fr]"
+                initial={{ opacity: 0, y: 16 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true, amount: 0.3 }}
-                transition={{ delay: index * 0.08, duration: 0.55 }}
-                whileHover={{ x: 4 }}
+                viewport={{ once: true, amount: 0.25 }}
+                transition={{ delay: index * 0.08, duration: 0.5, ease: [0.22, 1, 0.36, 1] }}
+                whileHover={{ x: 5 }}
               >
-                <span className="grid h-12 w-12 place-items-center rounded-2xl border border-neon/25 bg-electric/10 text-neon shadow-[0_0_24px_rgba(37,99,235,0.18)]">
+                <span className="grid h-12 w-12 shrink-0 place-items-center rounded-2xl border border-neon/20 bg-gradient-to-br from-electric/15 to-neon/[0.07] text-neon shadow-[0_0_20px_rgba(37,99,235,0.14)]">
                   <FontAwesomeIcon icon={card.icon} className="h-5 w-5" />
                 </span>
                 <span>
                   <h3 className="font-bold text-ivory">{card.title}</h3>
-                  <p className="mt-2 text-sm leading-6 text-slate-400">{card.text}</p>
+                  <p className="mt-1.5 text-sm leading-6 text-slate-400">{card.text}</p>
                 </span>
               </motion.article>
             ))}
           </div>
         </motion.div>
 
+        {/* Photo */}
         <motion.div
           className="relative mx-auto w-full max-w-[470px]"
           initial={{ opacity: 0, scale: 0.94 }}
           whileInView={{ opacity: 1, scale: 1 }}
-          viewport={{ once: true, amount: 0.25 }}
+          viewport={{ once: true, amount: 0.2 }}
           transition={{ duration: 0.75, ease: [0.22, 1, 0.36, 1] }}
         >
           <motion.div
-            className="absolute left-1/2 top-1/2 h-80 w-80 -translate-x-1/2 -translate-y-1/2 rounded-full bg-electric/25 blur-3xl"
-            animate={{ scale: [1, 1.08, 1], opacity: [0.45, 0.72, 0.45] }}
+            className="absolute left-1/2 top-1/2 h-80 w-80 -translate-x-1/2 -translate-y-1/2 rounded-full bg-electric/22 blur-3xl"
+            animate={{ scale: [1, 1.08, 1], opacity: [0.4, 0.68, 0.4] }}
             transition={{ duration: 5.5, repeat: Infinity, ease: "easeInOut" }}
           />
-          <div className="absolute inset-8 rounded-full border border-neon/15" />
-          <div className="absolute inset-0 bg-radial-grid bg-[length:28px_28px] opacity-30 [mask-image:radial-gradient(circle_at_center,black,transparent_72%)]" />
+          {/* Rings */}
+          <div className="absolute inset-8 rounded-full border border-neon/12" />
+          <div className="absolute inset-14 rounded-full border border-neon/[0.07]" />
+          <div className="absolute inset-0 bg-radial-grid bg-[length:28px_28px] opacity-25 [mask-image:radial-gradient(circle_at_center,black,transparent_72%)]" />
           {particles.map((particle) => (
             <motion.span
               key={particle.id}
@@ -121,7 +135,7 @@ export function About() {
           ))}
 
           <motion.div
-            className="premium-card relative rounded-[1.8rem] p-3 shadow-glow"
+            className="premium-card relative rounded-[1.8rem] p-3 ring-glow"
             animate={{ y: [0, -8, 0] }}
             transition={{ duration: 5.8, repeat: Infinity, ease: "easeInOut" }}
           >
@@ -135,8 +149,9 @@ export function About() {
         </motion.div>
       </div>
 
+      {/* Stats */}
       <motion.div
-        className="premium-card mt-12 grid rounded-3xl sm:grid-cols-2 lg:grid-cols-4"
+        className="premium-card mt-12 grid overflow-hidden rounded-3xl sm:grid-cols-2 lg:grid-cols-4"
         initial={{ opacity: 0, y: 24 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, amount: 0.3 }}

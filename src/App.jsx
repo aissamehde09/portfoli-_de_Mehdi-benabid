@@ -6,7 +6,6 @@ import { Footer } from "./components/Footer";
 import { Hero } from "./components/Hero";
 import { Navbar } from "./components/Navbar";
 import { Projects } from "./components/Projects";
-import { Resume } from "./components/Resume";
 import { Skills } from "./components/Skills";
 
 function CursorGlow() {
@@ -20,9 +19,9 @@ function CursorGlow() {
 
   return (
     <motion.div
-      className="pointer-events-none fixed z-[60] hidden h-44 w-44 rounded-full bg-neon/[0.12] blur-3xl lg:block"
-      animate={{ x: position.x - 88, y: position.y - 88 }}
-      transition={{ type: "spring", stiffness: 120, damping: 24, mass: 0.25 }}
+      className="pointer-events-none fixed z-[60] hidden h-64 w-64 rounded-full bg-neon/[0.07] blur-[100px] lg:block"
+      animate={{ x: position.x - 128, y: position.y - 128 }}
+      transition={{ type: "spring", stiffness: 150, damping: 30, mass: 0.1 }}
     />
   );
 }
@@ -54,7 +53,6 @@ export default function App() {
         <Projects />
         <Skills />
         <About />
-        <Resume />
         <Contact />
       </main>
       <Footer />

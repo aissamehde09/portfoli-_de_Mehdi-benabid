@@ -8,30 +8,33 @@ export function GlowButton({
   variant = "primary",
   download,
   type,
+  className: customClassName = "",
 }) {
   const styles =
     variant === "primary"
-      ? "border-electric bg-electric text-white shadow-glow hover:bg-neon"
+      ? "border-electric bg-electric text-white shadow-glow hover:bg-neon hover:shadow-glow-lg"
       : "border-white/12 bg-white/[0.04] text-ivory hover:border-neon/60 hover:bg-neon/10";
 
   const content = (
     <>
-      <span>{children}</span>
-      {Icon && <FontAwesomeIcon icon={Icon} className="h-4 w-4" aria-hidden="true" />}
+      <span className="relative z-10">{children}</span>
+      {Icon && <FontAwesomeIcon icon={Icon} className="relative z-10 h-4 w-4" aria-hidden="true" />}
+      
+      {/* Shimmer effect */}
+      <span className="absolute inset-0 -translate-x-[100%] bg-gradient-to-r from-transparent via-white/20 to-transparent transition-transform duration-1000 group-hover:translate-x-[100%]" />
     </>
   );
 
-  const className = `focus-premium shine-link group relative inline-flex h-12 items-center justify-center gap-2 overflow-hidden rounded-xl border px-5 text-sm font-semibold transition ${styles}`;
+  const className = `focus-premium group relative inline-flex h-12 items-center justify-center gap-2 overflow-hidden rounded-xl border px-6 text-sm font-bold transition-all duration-300 ${styles} ${customClassName}`;
 
   if (type) {
     return (
       <motion.button
         type={type}
         className={className}
-        whileHover={{ y: -2, scale: 1.02 }}
-        whileTap={{ scale: 0.98 }}
+        whileHover={{ y: -2 }}
+        whileTap={{ scale: 0.97 }}
       >
-        <span className="absolute inset-0 translate-x-[-120%] bg-gradient-to-r from-transparent via-white/25 to-transparent transition duration-700 group-hover:translate-x-[120%]" />
         {content}
       </motion.button>
     );
@@ -42,10 +45,9 @@ export function GlowButton({
       href={href}
       download={download}
       className={className}
-      whileHover={{ y: -2, scale: 1.02 }}
-      whileTap={{ scale: 0.98 }}
+      whileHover={{ y: -2 }}
+      whileTap={{ scale: 0.97 }}
     >
-      <span className="absolute inset-0 translate-x-[-120%] bg-gradient-to-r from-transparent via-white/25 to-transparent transition duration-700 group-hover:translate-x-[120%]" />
       {content}
     </motion.a>
   );
