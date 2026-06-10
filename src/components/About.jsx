@@ -140,7 +140,7 @@ export function About() {
             transition={{ duration: 5.8, repeat: Infinity, ease: "easeInOut" }}
           >
             <img
-              src="/mehdi-photo.jpeg"
+              src="/about-photo.jpeg"
               alt="Portrait professionnel de Mehdi Benabid"
               className="aspect-[4/5] w-full rounded-[1.35rem] object-cover object-[50%_28%]"
             />
